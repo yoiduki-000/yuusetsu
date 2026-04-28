@@ -1,40 +1,12 @@
 <!DOCTYPE html>
-}
-.chapter h2{
-  font-size:30px;
-  font-weight:normal;
-  margin:0;
-}
-.chapter p{
-  color:#7b6d67;
-}
-p{
-  margin:0 0 1.8em;
-  font-size:19px;
-}
-footer{
-  width:min(820px,92%);
-  margin:30px auto 70px;
-  display:flex;
-  justify-content:space-between;
-}
-footer a{
-  color:#6d4f4b;
-  text-decoration:none;
-}
-footer a:hover{
-  text-decoration:underline;
-}
-@media (max-width:700px){
-main{
-  padding:30px 22px;
-}
-p{
-  font-size:18px;
-}
-header h1{
-  font-size:28px;
-}
+    display:block;
+    text-align:center;
+  }
+
+  .page-footer a{
+    display:block;
+    margin:12px 0;
+  }
 }
 </style>
 </head>
@@ -50,13 +22,18 @@ header h1{
   <a href="novel.html">Novel</a>
 </nav>
 
-<main>
+<div class="reading-tools">
+  <button id="horizontalButton" class="active" type="button">横書き</button>
+  <button id="verticalButton" type="button">縦書き</button>
+</div>
+
+<main id="novelBody" class="novel-body">
   <section class="chapter">
     <h2>第一話</h2>
     <p>はじまり</p>
   </section>
 
-  <p>ここに本文を入れます。</p>
+  <p>テストテキスト。</p>
 
   <p>美しい唄声が響き渡る。</p>
 
@@ -64,13 +41,37 @@ header h1{
 
   <p>明るい空の下。地下に植えられていたすべての樹木が、この場所に移動されていた。</p>
 
-  <p>テストテキスト</p>
+  <p>「樹を人間に戻すことは出来ません。そして、樹には痛覚が残っている」</p>
+
+  <p>レゼルの言葉が蘇る。</p>
+
+  <p>ネメシアは、天使に願い、天使はそれを聞き届けた。</p>
+
+  <p>テストテキスト。</p>
 </main>
 
-<footer>
+<footer class="page-footer">
   <a href="novel.html">← 小説一覧へ</a>
   <a href="#">次の話 →</a>
 </footer>
+
+<script>
+const novelBody = document.getElementById("novelBody");
+const horizontalButton = document.getElementById("horizontalButton");
+const verticalButton = document.getElementById("verticalButton");
+
+horizontalButton.addEventListener("click", function(){
+  novelBody.classList.remove("vertical");
+  horizontalButton.classList.add("active");
+  verticalButton.classList.remove("active");
+});
+
+verticalButton.addEventListener("click", function(){
+  novelBody.classList.add("vertical");
+  verticalButton.classList.add("active");
+  horizontalButton.classList.remove("active");
+});
+</script>
 
 </body>
 </html>

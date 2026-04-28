@@ -1,4 +1,34 @@
 <!DOCTYPE html>
+.novel-body.vertical p{
+  margin:0 0 0 1.7em;
+  font-size:19px;
+}
+
+.novel-body.vertical .sideways{
+  text-combine-upright:all;
+}
+
+.page-footer{
+  width:min(900px,92%);
+  margin:30px auto 70px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.page-footer a{
+  color:#6d4f4b;
+  text-decoration:none;
+}
+
+.page-footer a:hover{
+  text-decoration:underline;
+}
+
+@media (max-width:700px){
+  header h1{
+    font-size:28px;
+  }
+
   .novel-body{
     padding:30px 22px;
   }
@@ -15,7 +45,7 @@
   .reading-tools{
     text-align:center;
   }
-  
+
   .page-footer{
     display:block;
     text-align:center;
@@ -25,7 +55,7 @@
     display:block;
     margin:12px 0;
   }
-
+}
 </style>
 </head>
 <body>
@@ -51,9 +81,21 @@
     <p>はじまり</p>
   </section>
 
-  <p>テストテキスト</p>
+  <p>ここに本文を入れます。</p>
 
-  <p>テストテキスト</p>
+  <p>美しい唄声が響き渡る。</p>
+
+  <p>騎士の腕に抱かれて、少年が唄を紡いでいる。</p>
+
+  <p>明るい空の下。地下に植えられていたすべての樹木が、この場所に移動されていた。</p>
+
+  <p>「樹を人間に戻すことは出来ません。そして、樹には痛覚が残っている」</p>
+
+  <p>レゼルの言葉が蘇る。</p>
+
+  <p>ネメシアは、天使に願い、天使はそれを聞き届けた。</p>
+
+  <p>続きの文章をこのように段落ごとに追加していきます。</p>
 </main>
 
 <footer class="page-footer">
@@ -80,4 +122,4 @@ verticalButton.addEventListener("click", function(){
 </script>
 
 </body>
-</html>
+</html>  

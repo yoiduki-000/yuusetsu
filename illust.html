@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery｜宵月の書庫</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery｜宵月の書庫</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <h1>Gallery</h1>
-    <p>イラスト置き場</p>
-  </header>
+<header class="site-header">
+  <h1>Gallery</h1>
+  <p>イラスト置き場</p>
+</header>
 
-  <nav class="global-nav">
-    <a href="main.html">Home</a>
-    <a href="novel.html">Novel</a>
-    <a href="illust.html">Gallery</a>
-    <a href="world.html">World</a>
-    <a href="other.html">Other</a>
-  </nav>
+<nav class="global-nav">
+  <a href="main.html">Home</a>
+  <a href="novel.html">Novel</a>
+  <a class="current" href="illust.html">Gallery</a>
+  <a href="world.html">World</a>
+  <a href="other.html">Other</a>
+</nav>
 
-  <main class="container">
-    <section class="card">
-      <h2>Illustration</h2>
-      <p>画像は後で追加します。</p>
+<main class="container">
+  <section class="card">
+    <h2>Illustration</h2>
+    <p>画像は `images` フォルダを作って入れると整理しやすいです。</p>
 
-      <div class="gallery-grid">
+    <div class="gallery-grid">
+      <div>
         <div class="gallery-item">No Image</div>
-        <div class="gallery-item">No Image</div>
-        <div class="gallery-item">No Image</div>
+        <p class="gallery-caption">イラストタイトル</p>
       </div>
-    </section>
-  </main>
+      <div>
+        <div class="gallery-item">No Image</div>
+        <p class="gallery-caption">イラストタイトル</p>
+      </div>
+      <div>
+        <div class="gallery-item">No Image</div>
+        <p class="gallery-caption">イラストタイトル</p>
+      </div>
+    </div>
+  </section>
+</main>
 
-  <footer>
-    <p>&copy; 宵月</p>
-  </footer>
+<footer class="site-footer">
+  <p>&copy; 宵月</p>
+</footer>
 
 </body>
 </html>

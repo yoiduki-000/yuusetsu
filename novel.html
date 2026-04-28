@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Novel｜宵月の書庫</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novel｜宵月の書庫</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <h1>Novel</h1>
-    <p>物語の一覧</p>
-  </header>
+<header class="site-header">
+  <h1>Novel</h1>
+  <p>物語の一覧</p>
+</header>
 
-  <nav class="global-nav">
-    <a href="main.html">Home</a>
-    <a href="novel.html">Novel</a>
-    <a href="illust.html">Gallery</a>
-    <a href="world.html">World</a>
-    <a href="other.html">Other</a>
-  </nav>
+<nav class="global-nav">
+  <a href="main.html">Home</a>
+  <a class="current" href="novel.html">Novel</a>
+  <a href="illust.html">Gallery</a>
+  <a href="world.html">World</a>
+  <a href="other.html">Other</a>
+</nav>
 
-  <main class="container two-column">
-    <aside class="side-menu">
-      <h2>Category</h2>
-      <a href="#long">長編</a>
-      <a href="#short">短編</a>
-      <a href="#memo">掌編・断片</a>
-    </aside>
+<main class="container two-column">
+  <aside class="side-menu">
+    <h2>Category</h2>
+    <a href="#long">長編</a>
+    <a href="#short">短編</a>
+    <a href="#fragment">掌編・断片</a>
+  </aside>
 
-    <section class="main-content">
-      <div class="card" id="long">
-        <h2>長編</h2>
-        <div class="novel-item">
-          <h3>大きな桜の樹の下で</h3>
-          <p>天使、少年、騎士、そして失われたものたちの物語。</p>
-          <a href="novel-sakura-01.html">読む</a>
+  <section>
+    <div class="card" id="long">
+      <h2>長編</h2>
+
+      <article class="novel-item">
+        <h3>大きな桜の樹の下で</h3>
+        <div class="novel-meta">
+          <span class="tag">幻想</span>
+          <span class="tag">天使</span>
+          <span class="tag">少年</span>
+          <span class="tag">連載中</span>
         </div>
-      </div>
+        <p>天使、少年、騎士、そして失われたものたちの物語。</p>
+        <a class="read-link" href="novel-sakura-01.html">第一話を読む</a>
+      </article>
+    </div>
 
-      <div class="card" id="short">
-        <h2>短編</h2>
-        <div class="novel-item">
-          <h3>準備中</h3>
-          <p>準備中</p>
-          <a href="#">本文ページは後で作成</a>
+    <div class="card" id="short">
+      <h2>短編</h2>
+
+      <article class="novel-item">
+        <h3>短編タイトル</h3>
+        <div class="novel-meta">
+          <span class="tag">短編</span>
+          <span class="tag">未分類</span>
         </div>
-      </div>
+        <p>短編の説明文をここに入れます。</p>
+        <a class="read-link" href="#">準備中</a>
+      </article>
+    </div>
 
-      <div class="card" id="memo">
-        <h2>掌編・断片</h2>
-        <div class="novel-item">
-          <h3>準備中</h3>
-          <p>短い文章や断片を置く場所です。</p>
-          <a href="#">本文ページは後で作成</a>
+    <div class="card" id="fragment">
+      <h2>掌編・断片</h2>
+
+      <article class="novel-item">
+        <h3>断片タイトル</h3>
+        <div class="novel-meta">
+          <span class="tag">断片</span>
         </div>
-      </div>
-    </section>
-  </main>
+        <p>短い文章、情景、台詞の欠片などを置く場所です。</p>
+        <a class="read-link" href="#">準備中</a>
+      </article>
+    </div>
+  </section>
+</main>
 
-  <footer>
-    <p>&copy; 宵月</p>
-  </footer>
+<footer class="site-footer">
+  <p>&copy; 宵月</p>
+</footer>
 
 </body>
 </html>

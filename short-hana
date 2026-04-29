@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>幽獄の雪月花｜宵月の書庫</title>
+<title>月夜の追想｜宵月の書庫</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="site-header">
-  <h1>氷雪の天秤</h1>
+  <h1>氷雪花の欠片</h1>
   <p>作品表紙</p>
 </header>
 
@@ -27,40 +27,37 @@
 
   <section class="card cover-card">
     <div class="cover-image">
-      <img src="images/yuki-cover.png" alt="氷雪の天秤 表紙">
+      <img src="images/yuki-cover.png" alt="月夜の追想 表紙">
     </div>
 
     <div class="cover-text">
-      <h2>氷雪の天秤</h2>
-      <p class="character-role">それは、〝人で無し〟の愛情だった。</p>
+      <h2>月夜の追想</h2>
+      <p class="character-role">語られなかった誰かの記憶。</p>
 
       <div class="novel-meta">
         <span class="tag">氷の兄弟</span>
-        <span class="tag">秩序の双子</span>
-        <span class="tag">影の使徒</span>
-        <span class="tag">準備中</span>
+        <span class="tag">断片</span>
+        <span class="tag">別視点</span>
       </div>
 
       <p>
-        氷雪の壁に閉ざされた孤島。
+        氷雪の天秤と連動した断片集。
       </p>
 
-      <p>
-        〝不運にも〟優秀だった兄弟の話。
-      </p>
-
-      <p class="small-note">初回公開：2026.04.28</p>
+      <p class="small-note">初回公開：2026.04.29</p>
     </div>
   </section>
+
 
   <section class="card">
     <h2>目次</h2>
 
     <article class="novel-item">
-      <h3>第一話　はじまり</h3>
-      <p>準備中です</p>
-      <a class="read-link" href="novel-yuki-01.html">準備中</a>
+      <h3>月の音色</h3>
+      <p>氷雪の天秤第二話後</p>
+      <a class="read-link" href="short-hana-01.html">読む</a>
     </article>
+
 
     <article class="novel-item">
       <h3>第二話</h3>
@@ -68,6 +65,7 @@
       <a class="read-link" href="#">準備中</a>
     </article>
   </section>
+
 
   <section class="card">
     <h2>閲覧案内</h2>
@@ -83,7 +81,7 @@
 
 <footer class="page-footer">
   <a href="novel.html">← 小説一覧へ</a>
-  <a href="novel-sakura-01.html">第一話へ →</a>
+  <a href="short-hana-01.html">次の断片へ →</a>
 </footer>
 
 </body>
